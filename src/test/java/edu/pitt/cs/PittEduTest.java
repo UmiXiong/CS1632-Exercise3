@@ -70,13 +70,13 @@ public class PittEduTest {
   }
   @Test
 //  ???
-  public void tEST4SHCOOLSSCI() {
+  public void tEST4SCHOOLSSCI() {
     driver.get("https://www.pitt.edu/");
     driver.findElement(By.cssSelector(".nav_content_trigger")).click();
     // 4 | waitForElementVisible | id=block-pitt-25-edu-collegesschools-2 | 30000
     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
     wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("block-pitt-25-edu-collegesschools-2")));
-    assertThat(driver.findElement(By.xpath("//ul[@data-block=\"drawer_nav_right_column\"]/li[3]")).getText(), is("Computing & Information"));
+    assertThat(driver.findElement(By.("//ul[@data-block=\"drawer_nav_right_column\"]/li[3]")).getText(), is("Computing & Information"));
   }
   @Test
   public void tEST5SCHOOLSCOUNT() {

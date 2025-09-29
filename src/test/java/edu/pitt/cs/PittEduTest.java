@@ -69,6 +69,7 @@ public class PittEduTest {
     assertEquals(vars.get("logo_src").toString(), "https://www.pitt.edu/sites/default/files/assets/pitt_shield_white-home.png");
   }
   @Test
+//  ???
   public void tEST4SHCOOLSSCI() {
     driver.get("https://www.pitt.edu/");
     driver.findElement(By.cssSelector(".nav_content_trigger")).click();
